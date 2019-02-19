@@ -1,5 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {interval, Subscription} from 'rxjs';
+import {User} from './models/user.model';
 
 @Component({
   selector: 'app-root',
@@ -28,4 +29,6 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.counterSubscription.unsubscribe();
   }
+
+
 }
